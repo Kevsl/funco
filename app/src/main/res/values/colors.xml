@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF111111</color>
+    <color name="onyx">#FF343A40</color>
+    <color name="frenchgrey">#FFADB5BD</color>
+    <color name="platinum">#FFDEE2E6</color>
+    <color name="seasalt">#FFF8F9FA</color>
+    <color name="cream">#FFFFFAEC</color>
+    <color name="mayo">#FFFFF3D3</color>
+    <color name="curry">#FFFF930A</color>
+    <color name="honey">#FFA1450B</color>
+    <color name="nutella">#FF461B04</color>
+    <color name="ocean">#FF009FB7</color>
 </resources>
