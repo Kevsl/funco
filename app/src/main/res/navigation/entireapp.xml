@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/entireapp"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.example.funco.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_viewActivity"
+            app:destination="@id/viewActivity" />
+        <action
+            android:id="@+id/action_home2_to_homeResults"
+            app:destination="@id/homeResults" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewActivity"
+        android:name="com.example.funco.ViewActivity"
+        android:label="fragment_view_activity"
+        tools:layout="@layout/fragment_view_activity" >
+        <action
+            android:id="@+id/action_viewActivity_to_userDetails"
+            app:destination="@id/userDetails" />
+        <action
+            android:id="@+id/action_viewActivity_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_viewActivity_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeResults"
+        android:name="com.example.funco.HomeResults"
+        android:label="fragment_home_results"
+        tools:layout="@layout/fragment_home_results" >
+        <action
+            android:id="@+id/action_homeResults_to_viewActivity"
+            app:destination="@id/viewActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetails"
+        android:name="com.example.funco.userDetails"
+        android:label="fragment_user_details"
+        tools:layout="@layout/fragment_user_details" >
+        <action
+            android:id="@+id/action_userDetails_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_userDetails_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/navBar"
+        android:name="com.example.funco.navBar"
+        android:label="fragment_nav_bar"
+        tools:layout="@layout/fragment_nav_bar" >
+        <action
+            android:id="@+id/action_navBar_to_home2"
+            app:destination="@id/home2" />
+        <action
+            android:id="@+id/action_navBar_to_profile"
+            app:destination="@id/profile" />
+        <action
+            android:id="@+id/action_navBar_to_conversations"
+            app:destination="@id/conversations" />
+        <action
+            android:id="@+id/action_navBar_to_createActivity"
+            app:destination="@id/createActivity" />
+        <action
+            android:id="@+id/action_navBar_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_navBar_to_login2"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_navBar_to_register"
+            app:destination="@id/register" />
+        <action
+            android:id="@+id/action_navBar_to_myActivities"
+            app:destination="@id/myActivities" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateProfile"
+        android:name="com.example.funco.updateProfile"
+        android:label="fragment_update_profile"
+        tools:layout="@layout/fragment_update_profile" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.funco.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_updateProfile"
+            app:destination="@id/updateProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.funco.chat"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" >
+        <action
+            android:id="@+id/action_chat_to_viewActivity"
+            app:destination="@id/viewActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/conversations"
+        android:name="com.example.funco.conversations"
+        android:label="fragment_conversations"
+        tools:layout="@layout/fragment_conversations" >
+        <action
+            android:id="@+id/action_conversations_to_chat"
+            app:destination="@id/chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/createActivity"
+        android:name="com.example.funco.createActivity"
+        android:label="fragment_create_activity"
+        tools:layout="@layout/fragment_create_activity" >
+        <action
+            android:id="@+id/action_createActivity_to_viewActivity"
+            app:destination="@id/viewActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.funco.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.funco.register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/myActivities"
+        android:name="com.example.funco.myActivities"
+        android:label="fragment_my_activities"
+        tools:layout="@layout/fragment_my_activities" >
+        <action
+            android:id="@+id/action_myActivities_to_viewActivity"
+            app:destination="@id/viewActivity" />
+    </fragment>
+</navigation>
